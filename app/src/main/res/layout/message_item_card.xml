@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/id_user"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:backgroundTint="@color/app_dark_light"
+        app:cardCornerRadius="30dp"
+        app:layout_constraintTop_toTopOf="@id/user_message_card"
+        app:layout_constraintBottom_toBottomOf="@id/user_message_card"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_margin="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+            <TextView
+                android:id="@+id/user_id_txt"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4578"
+                android:maxLines="1"
+                android:textSize="12sp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textAlignment="center"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="User"
+                android:textColor="@color/white"
+                android:layout_gravity="bottom|center_horizontal"
+                />
+        </LinearLayout>
+
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/user_message_card"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/id_user"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0"
+        app:layout_constraintWidth_percent="0.6"
+        app:layout_constraintHorizontal_bias="0"
+        app:cardCornerRadius="10dp"
+        android:elevation="20dp"
+        android:layout_margin="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/user_message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:padding="5dp"
+                android:layout_gravity="center"
+                android:textSize="16sp"
+                android:text="dsadsadasdnmsbfndabfmndbsfmnbsdfmnbsanfbdsamnfbsmnadbffdsafnbsbanmfbsnmbfnmbfdsf"/>
+            <TextView
+                android:id="@+id/user_message_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:text= "Date:14-07-2001, Time: 12:30"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="5dp"/>
+        </LinearLayout>
+
+
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/id_agent"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:backgroundTint="@color/app_main"
+        app:cardCornerRadius="30dp"
+        app:layout_constraintTop_toTopOf="@id/agent_message_card"
+        app:layout_constraintBottom_toBottomOf="@id/agent_message_card"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+            <TextView
+                android:id="@+id/agent_id_txt"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4578"
+                android:maxLines="1"
+                android:textSize="12sp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textAlignment="center"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Agent"
+                android:textColor="@color/white"
+                android:layout_gravity="bottom|center_horizontal"
+                />
+        </LinearLayout>
+
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/agent_message_card"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/id_agent"
+        app:layout_constraintTop_toBottomOf="@id/user_message_card"
+        app:layout_constraintWidth_percent="0.6"
+        app:layout_constraintHorizontal_bias="1"
+        app:cardCornerRadius="10dp"
+        android:elevation="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/agent_message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:padding="5dp"
+                android:layout_gravity="center"
+                android:textSize="16sp"
+                android:text="dsadsadasdnmsbfndabfmndbsfmnbsdfmnbsanfbdsamnfbsmnadbffdsafnbsbanmfbsnmbfnmbfdsf"/>
+            <TextView
+                android:id="@+id/agent_message_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:text= "Date:14-07-2001, Time: 12:30"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="5dp"/>
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
